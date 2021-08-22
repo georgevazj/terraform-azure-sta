@@ -19,12 +19,6 @@ variable "client_secret" {
   description = "(Required) Service principal client secret"
 }
 
-# Azure resource group
-variable "resource_group_name" {
-  type = string
-  description = "(Required) Resource group name"
-}
-
 # Azure storage account
 variable "resource_group_name" {
   type = string
