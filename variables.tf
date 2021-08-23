@@ -3,6 +3,11 @@ variable "resource_group_name" {
   description = "(Required) Target resource group name"
 }
 
+variable "location" {
+  type = string
+  description = "(Required) Storage account location"
+}
+
 variable "sta_name" {
   type = string
   description = "(Required) Storage account name"
