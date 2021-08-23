@@ -1,24 +1,3 @@
-# Azure authentication
-variable "subscription_id" {
-  type = string
-  description = "(Required) Azure subscription id"
-}
-
-variable "tenant_id" {
-  type = string
-  description = "(Required) Azure tenant id"
-}
-
-variable "client_id" {
-  type = string
-  description = "(Required) Service principal client id"
-}
-
-variable "client_secret" {
-  type = string
-  description = "(Required) Service principal client secret"
-}
-
 # Azure storage account
 variable "resource_group_name" {
   type = string
@@ -28,12 +7,6 @@ variable "resource_group_name" {
 variable "sta_name" {
   type = string
   description = "(Required) Storage account name"
-}
-
-variable "sta_location" {
-  type = string
-  description = "(Optional) Storage account Location. Default: westeurope"
-  default = "westeurope"
 }
 
 variable "account_tier" {
