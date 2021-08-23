@@ -8,9 +8,11 @@ terraform {
 }
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
+  skip_provider_registration = true
   features {
   }
 }
+
 data "azurerm_resource_group" "rsg" {
   name = var.resource_group_name
 }
