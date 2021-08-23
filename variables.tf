@@ -1,3 +1,8 @@
+variable "resource_group_name" {
+  type = string
+  description = "(Required) Target resource group name"
+}
+
 variable "sta_name" {
   type = string
   description = "(Required) Storage account name"
