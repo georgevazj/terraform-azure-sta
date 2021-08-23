@@ -28,8 +28,4 @@ resource "azurerm_storage_account" "sta" {
   tags = {
     environment = var.environment_tag
   }
-
-  depends_on = [
-    data.azurerm_resource_group.rsg
-  ]
 }
